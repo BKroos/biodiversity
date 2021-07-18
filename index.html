@@ -3,23 +3,26 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Belly Button Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-
-  <div class="container">
+    <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center"> 
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-2">
+    <div class="container-md"></div>
+      <p> As we work to discover more sustainable, flavorful alternatives to meat, scientists have extended their search to bacteria. Bacteria has many advantages as a potential additive to meat substitutes, as it is plentiful and easily cultivated. Bacteria are all around us, on us, and within us.<br>
+      <br> To begin this search for a bacteria to enhance meat substitutes, this research summarizes analysis of the bacterial culture of participant belly buttons. Using the below drop-down and accompanying charts, you can examine what bacteria live in yours, and others' belly buttons.</p>
+    </div>
+      <div class="row">
+        <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
@@ -33,21 +36,24 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <div class="d-inline-flex p-2">[Above: A bar chart displaying the types and prevalence of bacteria, identified by OTU ID]</div>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <div class="d-inline-flex p-2">[Above: A gauge chart displaying the frequency participant washes their belly button]</div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <div class="d-inline-flex p-2">[Above: A bubble chart displaying all the types of bacteria in participant belly button]</div>
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <script src="charts.js"></script>
 
 
 </body>
